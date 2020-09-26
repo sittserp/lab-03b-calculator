@@ -1,4 +1,4 @@
-import { add, multiply, subtract, divide } from '../mathUtils.js';
+import { add, multiply, subtract, divide } from './mathUtils.js';
 
 // ADDITION
 const addInput1 = document.getElementById('addInput1');
