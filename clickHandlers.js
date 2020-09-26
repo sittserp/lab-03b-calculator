@@ -5,7 +5,7 @@ const addInput1 = document.getElementById('addInput1');
 const addInput2 = document.getElementById('addInput2');
 const addResult = document.getElementById('addResult');
 
-export function handleAddClick () {
+export function handleAddClick() {
     const value1 = addInput1.value;
     const value2 = addInput2.value;
 
@@ -16,7 +16,7 @@ export function handleAddClick () {
 
     console.log(value1AsNumber, value2AsNumber);
 
-    const sum = value1AsNumber + value2AsNumber;
+    const sum = add(value1AsNumber, value2AsNumber);
     addResult.textContent = sum; 
 }
 
@@ -25,7 +25,7 @@ const xInput1 = document.getElementById('xInput1');
 const xInput2 = document.getElementById('xInput2');
 const xResult = document.getElementById('xResult');
 
-export function handleMultiplyClick () {
+export function handleMultiplyClick() {
     const value1 = xInput1.value;
     const value2 = xInput2.value;
 
@@ -36,7 +36,7 @@ export function handleMultiplyClick () {
 
     console.log(value1AsNumber, value2AsNumber);
 
-    const sum = value1AsNumber * value2AsNumber;
+    const sum = multiply(value1AsNumber, value2AsNumber);
     xResult.textContent = sum; 
 }
 
@@ -45,7 +45,7 @@ const minusInput1 = document.getElementById('minusInput1');
 const minusInput2 = document.getElementById('minusInput2');
 const minusResult = document.getElementById('minusResult');
 
-export function handleSubtractionClick () {
+export function handleSubtractionClick() {
     const value1 = minusInput1.value;
     const value2 = minusInput2.value;
 
@@ -56,7 +56,7 @@ export function handleSubtractionClick () {
 
     console.log(value1AsNumber, value2AsNumber);
 
-    const sum = value1AsNumber - value2AsNumber;
+    const sum = subtract(value1AsNumber, value2AsNumber);
     minusResult.textContent = sum; 
 }
 
@@ -65,7 +65,7 @@ const divideInput1 = document.getElementById('divideInput1');
 const divideInput2 = document.getElementById('divideInput2');
 const divideResult = document.getElementById('divideResult');
 
-export function handleDivisionClick () {
+export function handleDivisionClick() {
     const value1 = divideInput1.value;
     const value2 = divideInput2.value;
 
@@ -76,6 +76,6 @@ export function handleDivisionClick () {
 
     console.log(value1AsNumber, value2AsNumber);
 
-    const sum = value1AsNumber / value2AsNumber;
+    const sum = divide(value1AsNumber, value2AsNumber);
     divideResult.textContent = sum; 
 }
